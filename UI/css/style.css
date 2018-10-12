@@ -27,3 +27,16 @@
   outline: none;
   font-size: 15px;
 }
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #bf80ff;
+  text-align: left;
+  padding: 8px;
+}
