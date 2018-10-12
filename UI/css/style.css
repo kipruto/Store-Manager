@@ -1,10 +1,73 @@
+body {
+  font-family: Arial;
+  padding: 0px;
+  background: #ffffff;
+  color: #400080;
+}
+
+h1,
+h4 {
+  text-align: center;
+  font-weight: lighter;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 10px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 20px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #6600cc;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav .login {
+  float: right;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #d9b3ff;
+  color: #400080;
+}
+
+.button {
+  background-color: #6600cc;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 4px;
+  cursor: pointer;
+}
 .container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
-  height: 350px;
+  width: 250px;
+  height: 400px;
 }
 
 .container .login-form,
@@ -18,20 +81,47 @@
 .container .login-form input,
 .input-form input {
   display: block;
-  width: 100;
+  width: 100%;
   padding: 10px;
   box-sizing: border-box;
   margin-bottom: 20px;
-  border: 2px solid #ccc;
+  border: 1px solid #6600cc;
   border-radius: 4px;
   outline: none;
   font-size: 15px;
+  color: #ffffff;
+}
+
+.container .login-form input:hover,
+.input-form input:hover {
+  border: 2px solid #6600cc;
+}
+
+.container .login-form input[type="submit"],
+.input-form input[type="submit"] {
+  background-color: #6600cc;
+}
+
+input {
+  border: 1px solid #6600cc;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #400080;
+  opacity: 1; /* Firefox */
 }
 
 td,
@@ -39,4 +129,38 @@ th {
   border: 1px solid #bf80ff;
   text-align: left;
   padding: 8px;
+  font-weight: lighter;
+}
+
+#user_input {
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #bf80ff;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+#sales_table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#sales_table th,
+#sales_table td {
+  text-align: left;
+  padding: 12px;
+}
+
+#sales_table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#sales_table tr.header,
+#sales_table tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
 }
