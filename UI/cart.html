@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cart</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+
+<body>
+    <h1>Shopping Basket</h1>
+    <div>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Unit Cost</th>
+                <th>Cost</th>
+            </tr>
+            <tr>
+                <td>Bananas</td>
+                <td>10</td>
+                <td>15</td>
+                <td>150</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>150</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="input-form">
+        <form action="pos.html">
+            <label for="cash">Cash</label>
+            <input type="number" id="cash" name="cash" placeholder="0.00" min="0">
+            <label for="change">Change</label>
+            <input type="number" id="change" name="change" placeholder="0.00" min="0">
+            <input type="submit" value="Checkout">
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>
